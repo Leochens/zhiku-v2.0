@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>添加新闻</title>
+</head>
+<body>
+<form id="form" action="admin.php?controller=admin&method=articleAdd" method="post">
+    
+    标题<input type="" name="title" value="{$data.title|default:''}"><br>
+    作者<input type="" name="author" value="{$data.author|default:''}"><br>
+    出处<input type="" name="from" value="{$data.from|default:''}"><br>
+    内容<textarea style="width: 600px ;height: 400px;" name="content" >{$data.content|default:''}</textarea><br>
+
+    <!--获得id-->
+    <input type="hidden" name="id" value="{$data.id|default:''}">
+
+    <input type="submit" value="提交">
+    
+</form>
+</body>
+</html>

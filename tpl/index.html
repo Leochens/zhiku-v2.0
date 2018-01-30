@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>Home</title>
+  <!--加载必要的文件 如css文件-->
+ {include file='tpl/head_srcs.html'}
+
+</head>
+
+<body class="bg-light">
+
+    <main class="main oh" id="main">
+    <!--页面预加载-->
+    {include file='tpl/preloader.html'}  
+    <!--页头-->
+    {include file='tpl/header.html'}     
+    <!-- Trending Now --><!--滚动条-->
+    {include file='tpl/index_component/trending.html'}   
+    <!--特色图-->
+    {include file='tpl/index_component/featured.html'}  
+    <!--中部内容-->
+    {include file='tpl/index_component/content.html'}
+    <!--页脚文件-->
+    {include file='footer.html'}
+
+    <div id="back-to-top">
+      <a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+    </div>
+  </main> <!-- end main-wrapper -->
+
+  
+  <!-- jQuery Scripts  包含必要js文件-->
+{include file='tpl/js_srcs.html'}
+</body>
+</html>
