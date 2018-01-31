@@ -1,7 +1,8 @@
 CREATE TABLE `zhiku`.`article` ( 
 `id` INT(4) NOT NULL AUTO_INCREMENT,
+`title` VARCHAR(200) NOT NULL DEFAULT '（无标题）',
 `author` VARCHAR(32) NOT NULL , 
-`dataline` INT NOT NULL , 
+`dateline` INT NOT NULL DEFAULT 0, 
 `content` TEXT NOT NULL ,
 `tags` VARCHAR(64) NOT NULL , 
 `pic_path` VARCHAR(500) NOT NULL ,

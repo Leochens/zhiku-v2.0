@@ -46,13 +46,15 @@ class articleModel
             $title= addslashes($title);
             $author=addslashes($author);
             $content=addslashes($content);
-            $from=addslashes($from);
-
+            $tags=addslashes($tags);
+            //$pic_path=addslashes($pic_path);
             $data=array(
                 'title'=>$title,
                 'author'=>$author,
                 'content'=>$content,
-                'from'=>$from
+                'tags'=>$tags,
+                'pic_path'=>$pic_path,
+                'dateline'=>time()
             );
 
             if($_POST['id']!='')    //如果id不是空 那么说明要修改

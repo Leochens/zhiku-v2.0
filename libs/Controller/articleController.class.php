@@ -7,31 +7,75 @@ class articleController
 {
     
     private $table='article';  
-    public function arti_insert_update($table,$data)   
-    {
-        
-        extract($data);
 
-        $title = addslashes($title);
-        $author = addslashes($title);
-        $content = addslashes($content);
-        
-        DB::insert($this->table,$data);
+    public function arti_insert_update()   
+    {
+ 
+        //判断是否有POST数据
+        if(empty($_POST))
+        {
+            //如果没有 就显示添加修改的界面
+            // 并且有get['id']存在 就说明是要修改数据
+            //修改数据要显示旧的数据        
+            if (isset($_GET['id'])) {
+                $newsobj = M('article');
+                $data = $newsobj->getArticle($_GET['id']);
+            }else{
+                $data = array();
+            }
+            VIEW::assign(array('data'=>$data,'time'=>time()));     //注册data
+            VIEW::display('tpl/admin/articleAdd.html');       //显示模板
+        }else{
+            //如果有 就表示是添加新的新闻
+            //添加新闻要清空显示区域
+            //print_r($_POST);
+            $this->articleSub();
+        }       
+
     }
     public function arti_delete($table,$id)
     {
-
+        if(intval($_GET['id']))
+        {
+            
+            $artiobj = M('article');
+            if($artiobj->delArticle($_GET['id']))
+                $this->showMessage('删除成功','admin.php?controller=article&method=arti_show');
+            else
+                $this->showMessage('操作失败',
+                'admin.php?controller=admin&method=artiAdd&id='.$_GET['id']);            
+        }        
     }
-    public function arti_update($table,$data,$id)
+
+    public function arti_show()
     {
+        $newsobj = M('article');
+        $list = $newsobj->showList();
 
+        VIEW::assign(array('artiList'=>$list));
+        VIEW::display('tpl/admin/artiList.html');        
     }
-    public function arti_show($id)
+
+    private function showMessage($info, $url){
+        echo "<script>alert('$info');window.location.href='$url'</script>";
+        exit;
+    }  
+
+    private function articleSub()
     {
-
+        $res = M('article')->submitArticle($_POST);
+        if($res==0)
+            $this->showMessage('操作失败',
+            'admin.php?controller=admin&method=artiAdd&id='.$_POST['id']);
+        else if($res==1)
+            $this->showMessage('添加成功',
+            'admin.php?controller=article&method=arti_show');
+        else if($res==2)
+            $this->showMessage('修改成功',
+            'admin.php?controller=article&method=arti_show');
     }
 
-    function __construct(argument)
+    function __construct()
     {
         # code...
     }

@@ -4,16 +4,19 @@
     <title>添加新闻</title>
 </head>
 <body>
-<form id="form" action="admin.php?controller=admin&method=articleAdd" method="post">
+<form id="form" action="admin.php?controller=article&method=arti_insert_update" method="post">
     
     标题<input type="" name="title" value="{$data.title|default:''}"><br>
-    作者<input type="" name="author" value="{$data.author|default:''}"><br>
-    出处<input type="" name="from" value="{$data.from|default:''}"><br>
+    发布人<input type="" name="author" value="{$data.author|default:''}"><br>
+    标签<input type="" name="tags" value="{$data.tags|default:''}"><br>
+    图片路径<input type="" name="pic_path" value="{$data.pic_path|default:'tpl/img/blog/editors_post_img.jpg'}"><br>
+
     内容<textarea style="width: 600px ;height: 400px;" name="content" >{$data.content|default:''}</textarea><br>
-
+    
     <!--获得id-->
+    <input type="text" name="dateline" value="{'Y-m-d H-i-s'|date:$time}">
     <input type="hidden" name="id" value="{$data.id|default:''}">
-
+    
     <input type="submit" value="提交">
     
 </form>

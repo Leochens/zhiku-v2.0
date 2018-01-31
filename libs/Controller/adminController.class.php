@@ -53,69 +53,12 @@ class adminController{
         $this->showMessage('退出成功','admin.php?controller=admin&method=login');
     }
 
-    public function newsList()
-    {
-        $newsobj = M('news');
-        $list = $newsobj->showList();
+    
 
-        VIEW::assign(array('newsList'=>$list));
-        VIEW::display('tpl/admin/html/newsList.html');
-    }
-
-    public function articleAdd()
-    {
-        //判断是否有POST数据
-        if(empty($_POST))
-        {
-            //如果没有 就显示添加修改的界面
-            // 并且有get['id']存在 就说明是要修改数据
-            //修改数据要显示旧的数据        
-            if (isset($_GET['id'])) {
-                $newsobj = M('news');
-                $data = $newsobj->getArticle($_GET['id']);
-            }else{
-                $data = array();
-            }
-            VIEW::assign(array('data'=>$data));     //注册data
-            VIEW::display('tpl/admin/articleAdd.html');       //显示模板
-        }else{
-            //如果有 就表示是添加新的新闻
-            //添加新闻要清空显示区域
-            //print_r($_POST);
-            $this->articleSub();
-        }
-    }
-
-    public function articleDel()
-    {
-        if(intval($_GET['id']))
-        {
-            
-            $news = M('news');
-            if($news->delArticle($_GET['id']))
-                $this->showMessage('删除成功','admin.php?controller=admin&method=newsList');
-            else
-                $this->showMessage('操作失败',
-                'admin.php?controller=admin&method=newsAdd&id='.$_GET['id']);            
-        }
-    }
-
+ 
 
 /******************************************/
-    private function articleSub()
-    {
-        $res = M('news')->submitArticle($_POST);
-        if($res==0)
-            $this->showMessage('操作失败',
-            'admin.php?controller=admin&method=newsAdd&id='.$_POST['id']);
-        else if($res==1)
-            $this->showMessage('添加成功',
-            'admin.php?controller=admin&method=newsList');
-        else if($res==2)
-            $this->showMessage('修改成功',
-            'admin.php?controller=admin&method=newsList');
-    }
-
+    
     private function checkLogin()
     {
         $authobj = M('auth');   //实例化 auth模型
