@@ -7,10 +7,10 @@ class articleController
 {
     
     private $table='article';  
-
+    private $auth='';
     public function arti_insert_update()   
     {
- 
+       $this->checklogin();
         //判断是否有POST数据
         if(empty($_POST))
         {
@@ -35,6 +35,8 @@ class articleController
     }
     public function arti_delete($table,$id)
     {
+        $this->checklogin();
+
         if(intval($_GET['id']))
         {
             
@@ -63,10 +65,13 @@ class articleController
 
     private function articleSub()
     {
+        $this->checklogin();
+
+
         $res = M('article')->submitArticle($_POST);
         if($res==0)
             $this->showMessage('操作失败',
-            'admin.php?controller=admin&method=artiAdd&id='.$_POST['id']);
+            'admin.php?controller=article&method=arti_insert_update&id='.$_POST['id']);
         else if($res==1)
             $this->showMessage('添加成功',
             'admin.php?controller=article&method=arti_show');
@@ -75,9 +80,33 @@ class articleController
             'admin.php?controller=article&method=arti_show');
     }
 
+    //跳转到单独页面
+    //放入singlearticle模型中
+    public function articleDetail()
+    {
+  
+
+        $single = M('singlearticle');
+        if(isset($_GET['id'])&&!empty($_GET['id']))
+        $single->toDetail($_GET['id']);
+
+    }
+
     function __construct()
     {
-        # code...
+         
+    }
+
+    private function checklogin()
+    {
+        //判断当前是否已经登录->auth模型
+        $authobj = M('auth');
+        $this->auth = $authobj->getAuth();
+        //不在登录页并且没有登录，就要跳转到登录页面
+        if(empty($this->auth)&&START::$method!='login')
+        {
+            $this->showMessage('请登录后再操作','admin.php?controller=admin&method=login');
+        }              
     }
 }
 

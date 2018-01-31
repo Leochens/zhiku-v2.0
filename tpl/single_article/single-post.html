@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> {$data.title}</title>
+
+  {include file='tpl/head_srcs.html'}
+
+</head>
+
+<body class="bg-light single-post">
+
+ {include file='tpl/preloader.html'}
+  
+
+  <main class="main oh" id="main">
+  <!--页头-->
+    {include file='tpl/header.html'}    
+    
+   
+    <div class="main-container container" id="main-container">
+
+      <!-- Content -->
+      <div class="row">
+            
+        <!-- post content -->
+        <div class="col-lg-8 blog__content mb-30">
+
+          <!-- Breadcrumbs -->
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="{$router.index}" class="breadcrumbs__url"><i class="ui-home"></i></a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="{$router.index}" class="breadcrumbs__url">首页</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+              {$data.flag}
+            </li>
+          </ul>
+
+          <!-- standard post -->
+          <article class="entry">
+
+            <!--此处模板包含文章的标题 标签 日期 作者 评论数量 首页图-->
+            {include file='tpl/single_article/title_area.html'}
+
+            <!-- Share 
+            <div class="entry__share">
+              <div class="socials entry__share-socials">
+                <a href="#" class="social social-facebook entry__share-social social--wide social--medium">
+                  <i class="ui-facebook"></i>
+                  <span class="social__text">Share on Facebook</span>
+                </a>
+                <a href="#" class="social social-twitter entry__share-social social--wide social--medium">
+                  <i class="ui-twitter"></i>
+                  <span class="social__text">Share on Twitter</span>
+                </a>
+                <a href="#" class="social social-google-plus entry__share-social social--medium">
+                  <i class="ui-google"></i>
+                </a>
+                <a href="#" class="social social-pinterest entry__share-social social--medium">
+                  <i class="ui-pinterest"></i>
+                </a>
+              </div>                    
+            </div> <!-- share -->
+
+            <div class="entry__article">
+              <!--文章主体-->
+              {$data.content}
+
+              <!-- tags -->
+              <div class="entry__tags">
+                <span class="entry__tags-label">Tags:</span>
+                <a href="#" rel="tag">{$data.tags}</a>
+              </div> <!-- end tags -->
+
+            </div> <!-- end entry article -->
+            <!--反馈意见-->
+            {include file='tpl/single_article/feedback.html'}
+
+            <!-- 关于作者 -->
+            {include file='tpl/single_article/about_author.html'}
+
+            <!-- Prev / Next Post -->
+            {include file='tpl/single_article/pre_next.html'}
+            
+
+            <!-- Related Posts -->
+            {include file='tpl/single_article/related.html'}
+            
+          </article> <!-- end standard post -->
+
+
+          <!-- Comments -->
+            {include file='tpl/single_article/comments.html'}
+          
+        </div> <!-- end col -->
+          <!--右边的导航-->
+            {include file='tpl/single_article/right_sidebar.html'}
+       
+      </div> <!-- end content -->
+    </div> <!-- end main container -->
+
+    <!-- Footer -->
+    
+  {include file='tpl/footer.html'}
+
+  </main> <!-- end main-wrapper -->
+
+  
+  <!-- jQuery Scripts -->
+  {include file='tpl/js_srcs.html'}
+ 
+
+</body>
+</html>

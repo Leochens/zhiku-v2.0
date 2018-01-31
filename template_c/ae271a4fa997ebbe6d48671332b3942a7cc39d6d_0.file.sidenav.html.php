@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-30 11:07:54
+/* Smarty version 3.1.30, created on 2018-01-31 04:12:38
   from "E:\IT_study\zhiku-v2.0\tpl\sidenav.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7043fa3505f3_30718537',
+  'unifunc' => 'content_5a7134263ab977_64111339',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae271a4fa997ebbe6d48671332b3942a7cc39d6d' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\sidenav.html',
-      1 => 1517306839,
+      1 => 1517367733,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7043fa3505f3_30718537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7134263ab977_64111339 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Sidenav -->    
   <header class="sidenav" id="sidenav">
@@ -67,8 +67,8 @@ function content_5a7043fa3505f3_30718537 (Smarty_Internal_Template $_smarty_tpl)
           <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
           <ul class="sidenav__menu-dropdown">
             <li><a href="#" class="sidenav__menu-link">Gallery Post</a></li>
-            <li><a href="single-post.html" class="sidenav__menu-link">Video Post</a></li>
-            <li><a href="single-post.html" class="sidenav__menu-link">Audio Post</a></li>
+            <li><a href="#" class="sidenav__menu-link">Video Post</a></li>
+            <li><a href="#" class="sidenav__menu-link">Audio Post</a></li>
             <li><a href="#" class="sidenav__menu-link">Quote Post</a></li>
           </ul>
         </li>

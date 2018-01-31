@@ -11,12 +11,12 @@ class authModel
             return false;
         $username = addslashes($_POST['username']); 
         $password = addslashes($_POST['password']);
-        echo "222";
+        
         //用户验证操作 到checkuser方法
         if($this->auth=$this-> checkuser($username,$password))
         {
             $_SESSION['auth'] = $this->auth;
-            echo "333";
+           
             return true;
         }else
             return false;

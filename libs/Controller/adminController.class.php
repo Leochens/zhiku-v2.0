@@ -62,9 +62,9 @@ class adminController{
     private function checkLogin()
     {
         $authobj = M('auth');   //实例化 auth模型
-        echo "1111";
+       
         if($authobj->loginSubmit()){
-            echo "444";
+           
             $this->showMessage("登录成功!",'admin.php?controller=admin&method=index');
         }else{
             $this->showMessage("登录失败!",'admin.php?controller=admin&method=login');

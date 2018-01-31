@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-30 12:30:21
+/* Smarty version 3.1.30, created on 2018-01-31 09:17:21
   from "E:\IT_study\zhiku-v2.0\tpl\admin\login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a70574dc7dd82_89118075',
+  'unifunc' => 'content_5a717b91d6af99_53376333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0357d6e711ccd7b04001f4d7033c4ba3dcc74dc1' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\admin\\login.html',
-      1 => 1517229831,
+      1 => 1517386399,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a70574dc7dd82_89118075 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a717b91d6af99_53376333 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@ function content_5a70574dc7dd82_89118075 (Smarty_Internal_Template $_smarty_tpl)
     <input type="password" name="password" id="password"><br>
     <input type="submit" value="提交登录" id="submit">
 </form>
-
+<a href="index.php">返回首页</a>
 
 <style type="text/css">
     #login{

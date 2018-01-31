@@ -39,14 +39,16 @@ class articleModel
 
     public function submitArticle($data)
     {
+        
             extract($data); //恢复变量
             if(empty($content)||empty($title))  //没有title和内容不行
                 return 0;
             //转义 安全
             $title= addslashes($title);
             $author=addslashes($author);
-            $content=addslashes($content);
+            //$content=addslashes($content);
             $tags=addslashes($tags);
+            $flag=addslashes($flag);
             //$pic_path=addslashes($pic_path);
             $data=array(
                 'title'=>$title,
@@ -54,9 +56,10 @@ class articleModel
                 'content'=>$content,
                 'tags'=>$tags,
                 'pic_path'=>$pic_path,
-                'dateline'=>time()
+                'dateline'=>time(),
+                'flag'=>$flag
             );
-
+            echo $data['content'];
             if($_POST['id']!='')    //如果id不是空 那么说明要修改
             {
                 DB::update($this->table,$data,'id = '.$id);
@@ -82,4 +85,11 @@ class articleModel
         return DB::findAll($sql);
     }
 
+    public function get_this_arti($flag,$limit=1000)
+    {
+        //获得制定优先级的文章
+        $sql = 'SELECT * FROM '.$this->table." WHERE flag ='".$flag."'  ORDER BY dateline desc LIMIT  ".$limit ;    
+        
+        return DB::findAll($sql);
+    }
 }

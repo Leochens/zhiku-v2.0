@@ -12,7 +12,7 @@
 7.Navigation
 8.Footer
 9.Helper CLasses
-
+10.zhl css
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 /* General
@@ -4304,5 +4304,15 @@ dd {
 
 .comment-respond {
   margin-top: 60px; }
+
+
+/*zhl css*/
+.shenglue{
+  text-overflow: ellipsis;
+  height: 100px;
+    width: 100%;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

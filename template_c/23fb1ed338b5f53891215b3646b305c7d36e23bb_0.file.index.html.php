@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 02:57:25
+/* Smarty version 3.1.30, created on 2018-01-31 11:38:12
   from "E:\IT_study\zhiku-v2.0\tpl\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a712285ea23c7_76130545',
+  'unifunc' => 'content_5a719c94a52408_82304801',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '23fb1ed338b5f53891215b3646b305c7d36e23bb' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index.html',
-      1 => 1517362171,
+      1 => 1517394959,
       2 => 'file',
     ),
   ),
@@ -28,12 +28,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/js_srcs.html' => 1,
   ),
 ),false)) {
-function content_5a712285ea23c7_76130545 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a719c94a52408_82304801 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <title>Home</title>
+  <title>河大智库</title>
   <!--加载必要的文件 如css文件-->
  <?php $_smarty_tpl->_subTemplateRender("file:tpl/head_srcs.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>

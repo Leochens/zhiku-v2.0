@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-30 11:27:10
+/* Smarty version 3.1.30, created on 2018-01-31 04:29:49
   from "E:\IT_study\zhiku-v2.0\tpl\header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a70487edba936_46257461',
+  'unifunc' => 'content_5a71382d2d0699_39724663',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1569b2119ccea9fe8ea6e7919a490c34562af7d3' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\header.html',
-      1 => 1517308020,
+      1 => 1517369385,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/sidenav.html' => 1,
   ),
 ),false)) {
-function content_5a70487edba936_46257461 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a71382d2d0699_39724663 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Nav -->
 
@@ -50,7 +50,8 @@ function content_5a70487edba936_46257461 (Smarty_Internal_Template $_smarty_tpl)
             </button> <!-- end Side menu button -->
 
             <!-- Mobile logo -->
-            <a href="index.html" class="logo logo--mobile d-lg-none">
+            <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
+" class="logo logo--mobile d-lg-none">
               <img class="logo__img" src="img/logo_mobile.png" srcset="img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" alt="logo">
             </a>
 
@@ -59,7 +60,8 @@ function content_5a70487edba936_46257461 (Smarty_Internal_Template $_smarty_tpl)
               <ul class="nav__menu">
 
                 <li class="active">
-                  <a href="index.html">智库首页</a>
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
+">智库首页</a>
                 </li>
 
                 <li class="nav__dropdown">
@@ -151,7 +153,8 @@ function content_5a70487edba936_46257461 (Smarty_Internal_Template $_smarty_tpl)
         <div class="flex-parent align-items-center">
           
           <!-- Logo -->
-          <a href="index.html" class="logo d-none d-lg-block">
+          <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
+" class="logo d-none d-lg-block">
             <img class="logo__img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
           </a>
 
