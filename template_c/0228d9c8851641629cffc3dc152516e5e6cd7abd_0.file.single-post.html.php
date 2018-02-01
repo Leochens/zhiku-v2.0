@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 13:52:06
+/* Smarty version 3.1.30, created on 2018-01-31 14:59:39
   from "E:\IT_study\zhiku-v2.0\tpl\single_article\single-post.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71bbf65f8d55_32201043',
+  'unifunc' => 'content_5a71cbcbe125d2_53118439',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0228d9c8851641629cffc3dc152516e5e6cd7abd' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\single_article\\single-post.html',
-      1 => 1517403124,
+      1 => 1517407177,
       2 => 'file',
     ),
   ),
@@ -25,14 +25,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/single_article/feedback.html' => 1,
     'file:tpl/single_article/about_author.html' => 1,
     'file:tpl/single_article/pre_next.html' => 1,
-    'file:tpl/single_article/related.html' => 1,
     'file:tpl/single_article/comments.html' => 1,
     'file:tpl/single_article/right_sidebar.html' => 1,
     'file:tpl/footer.html' => 1,
     'file:tpl/js_srcs.html' => 1,
   ),
 ),false)) {
-function content_5a71bbf65f8d55_32201043 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a71cbcbe125d2_53118439 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -142,9 +141,7 @@ function content_5a71bbf65f8d55_32201043 (Smarty_Internal_Template $_smarty_tpl)
             
 
             <!-- Related Posts -->
-            <?php $_smarty_tpl->_subTemplateRender("file:tpl/single_article/related.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-
+            <!--已注释-->
             
           </article> <!-- end standard post -->
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 11:44:23
+/* Smarty version 3.1.30, created on 2018-01-31 14:22:35
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\latestNews.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a719e074e6d64_89566287',
+  'unifunc' => 'content_5a71c31bc2cf31_10041050',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0d1b71536d3414a98c89ee3145fa50a21b74160' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\latestNews.html',
-      1 => 1517395450,
+      1 => 1517404906,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a719e074e6d64_89566287 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a71c31bc2cf31_10041050 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once 'E:\\IT_study\\zhiku-v2.0\\libs\\View\\smarty_libs\\plugins\\modifier.truncate.php';
 ?>
          <section class="section">
@@ -29,9 +29,12 @@ if (!is_callable('smarty_modifier_truncate')) require_once 'E:\\IT_study\\zhiku-
               <a href="#" class="all-posts-url">查看全部</a>
             </div>
             <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latest2']->value, 'item');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latest']->value, 'item', false, NULL, 'foo', array (
+  'iteration' => true,
+));
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
 ?>
             <article class="entry post-list" style="height: 250px;">
               <div class="entry__img-holder post-list__img-holder">
@@ -82,6 +85,10 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                 </div>
               </div>
             </article>
+             <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration'] : null) == 5) {?>
+                    <?php break 1;?>
+                    <?php }?> 
+     
             <?php
 }
 }

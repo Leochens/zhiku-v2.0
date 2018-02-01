@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 04:50:38
+/* Smarty version 3.1.30, created on 2018-02-01 01:32:45
   from "E:\IT_study\zhiku-v2.0\tpl\single_article\about_author.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a713d0e6b3ec8_15884894',
+  'unifunc' => 'content_5a72602d966071_11907642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5de9a83ee9cf54a49c6aceec07426e4f695166fe' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\single_article\\about_author.html',
-      1 => 1517370571,
+      1 => 1517407271,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a713d0e6b3ec8_15884894 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a72602d966071_11907642 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Author -->
             <div class="title-wrap mt-40">
@@ -30,9 +30,10 @@ function content_5a713d0e6b3ec8_15884894 (Smarty_Internal_Template $_smarty_tpl)
               <img alt="" data-src="img/blog/author_large.jpg" src="img/empty.png" class="avatar lazyload">
               <div class="entry-author__info">
                 <h6 class="entry-author__name">
-                  <a href="#">John Carpet</a>
+                  <a href="#"><?php echo $_smarty_tpl->tpl_vars['data']->value['author'];?>
+</a>
                 </h6>
-                <p class="mb-0">But unfortunately for most of us our role as gardener has never been explained to us. And in misunderstanding our role, we have allowed seeds of all types, both good and bad, to enter our inner garden.</p>
+                <p class="mb-0">这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。这里是作者描述。</p>
               </div>
             </div>
 <?php }

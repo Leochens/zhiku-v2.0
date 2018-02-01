@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 11:42:04
+/* Smarty version 3.1.30, created on 2018-01-31 14:20:16
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\featured.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a719d7cc48ba6_21815386',
+  'unifunc' => 'content_5a71c290351005_31029096',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff1b9f5f44110a32d6e07ca3f2b9a6c3f03d2d43' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\featured.html',
-      1 => 1517395322,
+      1 => 1517404802,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a719d7cc48ba6_21815386 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a71c290351005_31029096 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
     <!-- Featured Posts Grid -->      
     <section class="featured-posts-grid bg-dark">
@@ -66,9 +66,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
         </div> <!-- end large post slider -->
         
         <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latest']->value, 'item');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latest']->value, 'item', false, NULL, 'foo', array (
+  'iteration' => true,
+));
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
 ?>
         <div class="featured-posts-grid__item featured-posts-grid__item--sm">        
           <article class="entry featured-posts-grid__entry">
@@ -106,6 +109,9 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
             </div>
           </article>
         </div>
+         <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration'] : null) == 2) {?>
+                    <?php break 1;?>
+          <?php }?> 
       <?php
 }
 } else {

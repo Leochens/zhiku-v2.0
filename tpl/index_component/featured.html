@@ -24,7 +24,7 @@
           </div> <!-- end owl slider -->
         </div> <!-- end large post slider -->
         
-        {foreach $latest as $item}
+        {foreach from=$latest item=item name=foo }
         <div class="featured-posts-grid__item featured-posts-grid__item--sm">        
           <article class="entry featured-posts-grid__entry">
             <div class="thumb-bg-holder" style="background-image: url({$item.pic_path});">
@@ -53,6 +53,9 @@
             </div>
           </article>
         </div>
+         {if $smarty.foreach.foo.iteration eq 2}
+                    {break}
+          {/if} 
       {foreachelse}
       <div class="featured-posts-grid__item featured-posts-grid__item--sm">        
           <article class="entry featured-posts-grid__entry">

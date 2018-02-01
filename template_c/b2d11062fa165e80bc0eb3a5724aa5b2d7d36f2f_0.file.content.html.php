@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 13:52:09
+/* Smarty version 3.1.30, created on 2018-01-31 14:31:23
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\content.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71bbf9906815_01149723',
+  'unifunc' => 'content_5a71c52b533197_07572112',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b2d11062fa165e80bc0eb3a5724aa5b2d7d36f2f' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\content.html',
-      1 => 1517403040,
+      1 => 1517405480,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/index_component/right_sidebar.html' => 1,
   ),
 ),false)) {
-function content_5a71bbf9906815_01149723 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a71c52b533197_07572112 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <div class="main-container container mt-40" id="main-container">         
 
@@ -66,7 +66,7 @@ function content_5a71bbf9906815_01149723 (Smarty_Internal_Template $_smarty_tpl)
           <!-- Carousel posts -->
           <section class="section mb-20">
             <div class="title-wrap">
-              <h3 class="section-title section-title--sm">More News</h3>
+              <h3 class="section-title section-title--sm">更多</h3>
               <div class="carousel-nav">
                 <button class="carousel-nav__btn carousel-nav__btn--prev" aria-label="previous slide">
                   <i class="ui-arrow-left"></i>
@@ -79,11 +79,22 @@ function content_5a71bbf9906815_01149723 (Smarty_Internal_Template $_smarty_tpl)
 
             <!-- Slider -->
             <div id="owl-posts" class="owl-carousel owl-theme">
+
+               <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['hot']->value, 'item', false, NULL, 'foo', array (
+));
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
               <article class="entry">
                 <div class="entry__img-holder">
-                  <a href="tpl/single_article/single-post.html">
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+">
                     <div class="thumb-container thumb-75">
-                      <img data-src="img/blog/carousel_img_1.jpg" src="img/blog/carousel_img_1.jpg" class="entry__img owl-lazy" alt="" />
+                      <img data-src="<?php echo $_smarty_tpl->tpl_vars['item']->value['pic_path'];?>
+" src="<?php echo $_smarty_tpl->tpl_vars['item']->value['pic_path'];?>
+" class="entry__img owl-lazy" alt="" />
                     </div>
                   </a>
                 </div>
@@ -91,75 +102,31 @@ function content_5a71bbf9906815_01149723 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="entry__body">
                   <div class="entry__header">
                     <h2 class="entry__title entry__title--sm">
-                      <a href="tpl/single_article/single-post.html">The Surprising Way This Designer Picked the Next It Colors</a>
+                      <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</a>
                     </h2>
                     <ul class="entry__meta">
                       <li class="entry__meta-date">
                         <i class="ui-date"></i>
-                        21 October, 2017
-                      </li>
-                      <li class="entry__meta-comments">
-                        <i class="ui-comments"></i>
-                        <a href="#">115</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
-              <article class="entry">
-                <div class="entry__img-holder">
-                  <a href="tpl/single_article/single-post.html">
-                    <div class="thumb-container thumb-75">
-                      <img data-src="img/blog/carousel_img_2.jpg" src="img/blog/carousel_img_2.jpg" class="entry__img owl-lazy" alt="" />
-                    </div>
-                  </a>
-                </div>
+                        <?php echo date('Y-m-d',$_smarty_tpl->tpl_vars['item']->value['dateline']);?>
 
-                <div class="entry__body">
-                  <div class="entry__header">
-                    <h2 class="entry__title entry__title--sm">
-                      <a href="tpl/single_article/single-post.html">What Fashion Editors Are Buying for Every Kid on Our Holiday List</a>
-                    </h2>
-                    <ul class="entry__meta">
-                      <li class="entry__meta-date">
-                        <i class="ui-date"></i>
-                        21 October, 2017
                       </li>
                       <li class="entry__meta-comments">
                         <i class="ui-comments"></i>
-                        <a href="#">115</a>
+                        <a href="#">0</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </article>
-              <article class="entry">
-                <div class="entry__img-holder">
-                  <a href="tpl/single_article/single-post.html">
-                    <div class="thumb-container thumb-75">
-                      <img data-src="img/blog/carousel_img_3.jpg" src="img/blog/carousel_img_3.jpg" class="entry__img owl-lazy" alt="" />
-                    </div>
-                  </a>
-                </div>
+              <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
 
-                <div class="entry__body">
-                  <div class="entry__header">
-                    <h2 class="entry__title entry__title--sm">
-                      <a href="tpl/single_article/single-post.html">Why Coach's Cute New Holiday Collab Is Unexpected</a>
-                    </h2>
-                    <ul class="entry__meta">
-                      <li class="entry__meta-date">
-                        <i class="ui-date"></i>
-                        21 October, 2017
-                      </li>
-                      <li class="entry__meta-comments">
-                        <i class="ui-comments"></i>
-                        <a href="#">115</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
             </div> <!-- end slider -->
 
           </section>

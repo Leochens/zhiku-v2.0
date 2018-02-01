@@ -3,7 +3,7 @@
               <h3 class="section-title">最新</h3>
               <a href="#" class="all-posts-url">查看全部</a>
             </div>
-            {foreach $latest2 as $item}
+            {foreach from=$latest item=item name=foo}
             <article class="entry post-list" style="height: 250px;">
               <div class="entry__img-holder post-list__img-holder">
                 <a href="{$router.single}{$item.id}">
@@ -43,6 +43,10 @@
                 </div>
               </div>
             </article>
+             {if $smarty.foreach.foo.iteration eq 5}
+                    {break}
+                    {/if} 
+     
             {/foreach}
            
           </section> <!-- end latest news -->
