@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 04:12:38
+/* Smarty version 3.1.30, created on 2018-02-01 05:22:04
   from "E:\IT_study\zhiku-v2.0\tpl\sidenav.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7134263ab977_64111339',
+  'unifunc' => 'content_5a7295ecb55369_56240501',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae271a4fa997ebbe6d48671332b3942a7cc39d6d' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\sidenav.html',
-      1 => 1517367733,
+      1 => 1517458922,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7134263ab977_64111339 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7295ecb55369_56240501 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Sidenav -->    
   <header class="sidenav" id="sidenav">
@@ -38,21 +38,21 @@ function content_5a7134263ab977_64111339 (Smarty_Internal_Template $_smarty_tpl)
       <ul class="sidenav__menu" role="menubar">
         <!-- Categories -->
         <li>
-          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--orange">World</a>
+          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--orange">思政</a>
         </li>
         <li>
-          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--blue">Business</a>
+          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--blue">十九大</a>
         </li>
         <li>
-          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--red">Politics</a>
+          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--red">科技</a>
         </li>
         <li>
-          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--salad">Lifestyle</a>
+          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--salad">人文</a>
         </li>
         <li>
-          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--purple">Tech</a>
+          <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--purple">生态</a>
         </li>
-        <li>
+        <!--<li>
           <a href="#" class="sidenav__menu-link sidenav__menu-link-category sidenav__menu-link--yellow">Fashion</a>
         </li>
         <li>
@@ -85,23 +85,23 @@ function content_5a7134263ab977_64111339 (Smarty_Internal_Template $_smarty_tpl)
             <li><a href="#" class="sidenav__menu-link">Lazyload</a></li>
             <li><a href="#" class="sidenav__menu-link">404</a></li>
           </ul>
+        </li>-->
+
+        <li>
+          <a href="#" class="sidenav__menu-link">关于我们</a>
         </li>
 
         <li>
-          <a href="#" class="sidenav__menu-link">About</a>
+          <a href="#" class="sidenav__menu-link">联系我们</a>
         </li>
 
         <li>
-          <a href="#" class="sidenav__menu-link">Contact</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidenav__menu-link">Advertise</a>
+          <a href="#" class="sidenav__menu-link">广告投放</a>
         </li>
       </ul>
     </nav>
 
-    <div class="socials sidenav__socials"> 
+   <!-- <div class="socials sidenav__socials"> 
       <a class="social social-facebook" href="#" target="_blank" aria-label="facebook">
         <i class="ui-facebook"></i>
       </a>
@@ -117,7 +117,7 @@ function content_5a7134263ab977_64111339 (Smarty_Internal_Template $_smarty_tpl)
       <a class="social social-instagram" href="#" target="_blank" aria-label="instagram">
         <i class="ui-instagram"></i>
       </a>
-    </div>
+    </div>-->
   </header> <!-- end sidenav -->
 <?php }
 }

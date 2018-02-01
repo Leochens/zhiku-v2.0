@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 04:29:49
+/* Smarty version 3.1.30, created on 2018-02-01 05:27:47
   from "E:\IT_study\zhiku-v2.0\tpl\header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71382d2d0699_39724663',
+  'unifunc' => 'content_5a72974347d159_98556020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1569b2119ccea9fe8ea6e7919a490c34562af7d3' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\header.html',
-      1 => 1517369385,
+      1 => 1517459265,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/sidenav.html' => 1,
   ),
 ),false)) {
-function content_5a71382d2d0699_39724663 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a72974347d159_98556020 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Nav -->
 
@@ -67,29 +67,27 @@ function content_5a71382d2d0699_39724663 (Smarty_Internal_Template $_smarty_tpl)
                 <li class="nav__dropdown">
                   <a href="#">研究团队</a>
                   <ul class="nav__dropdown-menu">
-                    <li><a href="#">Gallery Post</a></li>
-                    <li><a href="tpl/single-post.html">V0ideo Post</a></li>
-                    <li><a href="tpl/single-post.html">Audio Post</a></li>
-                    <li><a href="#">Quote Post</a></li>
+                    <li><a href="#">核心人物</a></li>
+                    <li><a href="#">实践探究</a></li>
+                    <li><a href="#">资料下载</a></li>
+                    <li><a href="#">联系团队</a></li>
                   </ul>
                 </li>
 
                 <li class="nav__dropdown">
                   <a href="#">研究成果</a>
                   <ul class="nav__dropdown-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Search Results</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">404</a></li>
+                    <li><a href="#">文化探究</a></li>
+                    <li><a href="#">案例分析</a></li>
+                    
                   </ul>
                 </li>
 
                 <li class="nav__dropdown">
                   <a href="#">关于我们</a>
                   <ul class="nav__dropdown-menu">
-                    <li><a href="#">Lazy Load</a></li>
-                    <li><a href="#">Shortcodes</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">智库核心</a></li>
                   </ul>
                 </li>
 
@@ -104,7 +102,7 @@ function content_5a71382d2d0699_39724663 (Smarty_Internal_Template $_smarty_tpl)
             <!-- Nav Right -->
             <div class="nav__right nav--align-right d-lg-flex">
 
-              <!-- Socials -->
+              <!-- Socials 
               <div class="nav__right-item socials nav__socials d-none d-lg-flex"> 
                 <a class="social social-facebook social--nobase" href="#" target="_blank" aria-label="facebook">
                   <i class="ui-facebook"></i>
@@ -121,7 +119,7 @@ function content_5a71382d2d0699_39724663 (Smarty_Internal_Template $_smarty_tpl)
                 <a class="social social-instagram social--nobase" href="#" target="_blank" aria-label="instagram">
                   <i class="ui-instagram"></i>
                 </a>
-              </div>
+              </div>-->
 
               <!-- Search -->
               <div class="nav__right-item nav__search">

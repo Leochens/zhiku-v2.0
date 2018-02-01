@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 14:20:16
+/* Smarty version 3.1.30, created on 2018-02-01 05:23:41
   from "E:\IT_study\zhiku-v2.0\tpl\footer.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71c2904b4ed9_37760295',
+  'unifunc' => 'content_5a72964d114607_02053648',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0134854ceed262bec0b0895750f5d341e900671b' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\footer.html',
-      1 => 1517404646,
+      1 => 1517459019,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a71c2904b4ed9_37760295 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a72964d114607_02053648 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Footer -->
     <footer class="footer footer--dark">
@@ -94,7 +94,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
             <div class="col-lg-3 col-md-6">
               <div class="widget widget__newsletter">
-                <h4 class="widget-title">Follow us</h4>
+                <h4 class="widget-title">第三方</h4>
 
                 <div class="socials mb-20">
                   <a href="#" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
@@ -140,11 +140,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             <div class="col-lg-7 order-lg-2 text-right text-md-center">
               <div class="widget widget_nav_menu">
                 <ul>
-                  <li><a href="#">Terms</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Advertise</a></li>
-                  <li><a href="#">Affiliates</a></li>
-                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">页脚项</a></li>
+                  <li><a href="#">页脚项</a></li>
+                  <li><a href="#">页脚项</a></li>
+                  <li><a href="#">页脚项</a></li>
+                  <li><a href="#">页脚项</a></li>
                 </ul>
               </div>              
             </div>

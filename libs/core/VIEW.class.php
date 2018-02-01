@@ -36,6 +36,7 @@ class VIEW{
 
     public static function display($tpl)
     {
+        
         self::$view->display($tpl);
     }
 }   
