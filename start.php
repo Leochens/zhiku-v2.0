@@ -17,24 +17,24 @@ class START{        //启动类
     public static $method;
     public static $config;
 
-    public function init_db()
+    public static function init_db()
     {
         DB::init('mysql',self::$config['dbconfig']);
     }
     
     //初始化视图引擎
-    public function init_view()
+    public static function init_view()
     {
         VIEW::init('Smarty',self::$config['viewconfig']);
     }
     //初始化控制器
-    public function init_controller()
+    public static function init_controller()
     {
         self::$controller = isset($_GET['controller'])?daddslashes($_GET['controller']):'index';
     }
     
     //初始化方法
-    public function init_method()
+    public static function init_method()
     {
         self::$method = isset($_GET['method'])?daddslashes($_GET['method']):'index';
     }
