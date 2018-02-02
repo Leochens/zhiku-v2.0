@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-02-01 05:27:47
+/* Smarty version 3.1.30, created on 2018-02-02 02:48:14
   from "E:\IT_study\zhiku-v2.0\tpl\header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a72974347d159_98556020',
+  'unifunc' => 'content_5a73c35e5a3910_77434363',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1569b2119ccea9fe8ea6e7919a490c34562af7d3' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\header.html',
-      1 => 1517459265,
+      1 => 1517536091,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/sidenav.html' => 1,
   ),
 ),false)) {
-function content_5a72974347d159_98556020 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a73c35e5a3910_77434363 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Nav -->
 
@@ -52,7 +52,7 @@ function content_5a72974347d159_98556020 (Smarty_Internal_Template $_smarty_tpl)
             <!-- Mobile logo -->
             <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
 " class="logo logo--mobile d-lg-none">
-              <img class="logo__img" src="img/logo_mobile.png" srcset="img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" alt="logo">
+              <img class="logo__img" src="img/logo_mobile.png" alt="logo">午饭晚饭人
             </a>
 
             <!-- Nav-wrap -->

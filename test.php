@@ -1,51 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>summernote</title>
-    <!-- include libraries(jQuery, bootstrap) -->
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
-
-<!-- include summernote css/js-->
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
-</head>
-<body>
-<div id="summernote">Hello Summernote</div>  
-  
-<script language="javascript">  
-  
-  
-$(document).ready(function() {  
-    $('#summernote').summernote({  
-        height: "500px",  
-        callbacks: {  
-            onImageUpload: function(files) { //the onImageUpload API  
-                img = sendFile(files[0]);  
-        }  
-    }  
-    });  
-});  
-  
-function sendFile(file) {  
-    data = new FormData();  
-    data.append("file", file);  
-    console.log(data);  
-    $.ajax({  
-        data: data,  
-        type: "POST",  
-        url: "{:U('./upload')}",  
-        cache: false,  
-        contentType: false,  
-        processData: false,  
-        success: function(url) {  
-              $("#summernote").summernote('insertImage', url, 'image name'); // the insertImage API  
-        }  
-    });  
-}  
-  
-</script>  
-</body>  
-</html>
+  <div class="fork"><div class="body"><!-- fork -->
+<div class="d-flex flex-items-baseline border-bottom border-gray-light py-3">
+  <a href="https://github.com/YagamiHikari"><img alt="@YagamiHikari" class="avatar mr-3" height="32" src="https://avatars2.githubusercontent.com/u/26521082?s=64&amp;v=4" width="32" /></a>
+  <div class="d-flex flex-justify-between flex-items-baseline width-full">
+    <div>
+      <a href="https://github.com/YagamiHikari" class="link-gray-dark text-bold wb-break-all" data-ga-click="News feed, event click, Event click type:ForkEvent target:actor" data-hydro-click="{&quot;event_type&quot;:&quot;news_feed.event.click&quot;,&quot;payload&quot;:{&quot;action_target&quot;:&quot;actor&quot;,&quot;event&quot;:{&quot;repo_id&quot;:112937574,&quot;actor_id&quot;:26521082,&quot;public&quot;:true,&quot;type&quot;:&quot;ForkEvent&quot;,&quot;target_id&quot;:null,&quot;id&quot;:6945828898,&quot;additional_details_shown&quot;:false},&quot;originating_request_id&quot;:&quot;05E2:156E5:1B0A3D:2A912F:5A731000&quot;}}" data-hydro-hmac="eb2b7c6813b09bf7b40c1b3cf3aa2c4f463e5d0116d59ca2ef5ec8da605f8316">YagamiHikari</a> forked <a href="https://github.com/YagamiHikari/ceshi" class="link-gray-dark text-bold wb-break-all" data-ga-click="News feed, event click, Event click type:ForkEvent target:parent" data-hydro-click="{&quot;event_type&quot;:&quot;news_feed.event.click&quot;,&quot;payload&quot;:{&quot;action_target&quot;:&quot;parent&quot;,&quot;event&quot;:{&quot;repo_id&quot;:112937574,&quot;actor_id&quot;:26521082,&quot;public&quot;:true,&quot;type&quot;:&quot;ForkEvent&quot;,&quot;target_id&quot;:null,&quot;id&quot;:6945828898,&quot;additional_details_shown&quot;:false},&quot;originating_request_id&quot;:&quot;05E2:156E5:1B0A3D:2A912F:5A731000&quot;}}" data-hydro-hmac="2fa7d030372bcffaf491f5d97fc86691ca42af877a352ef850a797194a1dda8a" title="YagamiHikari/ceshi">YagamiHikari/ceshi</a> from <a href="https://github.com/Leochens/ceshi" class="link-gray-dark text-bold wb-break-all" data-ga-click="News feed, event click, Event click type:ForkEvent target:repo" data-hydro-click="{&quot;event_type&quot;:&quot;news_feed.event.click&quot;,&quot;payload&quot;:{&quot;action_target&quot;:&quot;repo&quot;,&quot;event&quot;:{&quot;repo_id&quot;:112937574,&quot;actor_id&quot;:26521082,&quot;public&quot;:true,&quot;type&quot;:&quot;ForkEvent&quot;,&quot;target_id&quot;:null,&quot;id&quot;:6945828898,&quot;additional_details_shown&quot;:false},&quot;originating_request_id&quot;:&quot;05E2:156E5:1B0A3D:2A912F:5A731000&quot;}}" data-hydro-hmac="263961cf216070bfe7a74eb6fdfe710c93a27d40804b642f13aa58a850a63b34">Leochens/ceshi</a>
+    </div>
+    <span class="f6 text-gray-light no-wrap ml-4">
+      <relative-time datetime="2017-12-05T15:09:51Z">Dec 5, 2017</relative-time>
+    </span>
+  </div>
+</div>
+</div></div>
