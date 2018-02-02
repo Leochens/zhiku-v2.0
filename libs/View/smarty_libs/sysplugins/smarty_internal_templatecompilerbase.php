@@ -384,7 +384,7 @@ abstract class Smarty_Internal_TemplateCompilerBase
             $this->template->compiled->has_nocache_code = false;
             $this->has_variable_string = false;
             $this->prefix_code = array();
-            // add file dependency
+            // router_article_articleInsertUpdate file dependency
             if ($this->smarty->merge_compiled_includes || $this->template->source->handler->checkTimestamps()) {
                 $this->parent_compiler->template->compiled->file_dependency[ $this->template->source->uid ] =
                     array($this->template->source->filepath, $this->template->source->getTimeStamp(),

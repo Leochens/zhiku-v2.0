@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 13:59:18
+/* Smarty version 3.1.30, created on 2018-02-02 08:00:13
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\right_sidebar.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71bda6efdd36_32055804',
+  'unifunc' => 'content_5a740c7dd082b1_08073904',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '249ef4b8fcd3179b833dd84ca97bfeac3778355e' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\right_sidebar.html',
-      1 => 1517403556,
+      1 => 1517554797,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a71bda6efdd36_32055804 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a740c7dd082b1_08073904 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <aside class="col-lg-4 sidebar sidebar--right">
 
@@ -455,7 +455,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
 ?>
             <article class="entry">
                 <div class="entry__img-holder mb-0">
-                  <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 ">
                     <div class="thumb-bg-holder">
@@ -468,7 +468,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 
                 <div class="thumb-text-holder">  
                   <h2 class="thumb-entry-title thumb-entry-title--sm">
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>
@@ -503,7 +503,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
                 <article class="post-list-small__entry clearfix">
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
-                      <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                      <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 ">
                         <img data-src="<?php echo $_smarty_tpl->tpl_vars['item']->value['pic_path'];?>
@@ -514,7 +514,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                   </div>
                   <div class="post-list-small__body">
                     <h3 class="post-list-small__entry-title">
-                      <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                      <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>

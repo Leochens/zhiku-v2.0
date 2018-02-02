@@ -1,41 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>添加新闻</title>
-    <!-- include libraries(jQuery, bootstrap) -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
 
-    <!-- include summernote css/js-->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+<br><br><br>
+<div class="container">
+    <form   class="col-sm-6 col-md-12"  action="admin.php?controller=article&method=articleInsertUpdate" method="post">
+        <input class="form-control input-lg"  type="text" placeholder="文章标题" name="title" value="{$data.title|default:''}">
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1" >作者</span>
+          <input type="text" name="author" value="{$data.author|default:''}" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        </div>
 
-</head>
-<body>
-<form id="form" action="admin.php?controller=article&method=arti_insert_update" method="post">
-    
-    标题<input type="" name="title" value="{$data.title|default:''}"><br>
-    发布人<input type="" name="author" value="{$data.author|default:''}"><br>
-    标签<input type="" name="tags" value="{$data.tags|default:''}"><br>
-    图片路径<input type="" name="pic_path" value="{$data.pic_path|default:'tpl/img/blog/editors_post_img.jpg'}"><br>
-    
-    内容 <textarea id="summernote" name="content" >{$data.content|default:''}</textarea><br>
-    
-    <!--获得id-->
-    时间 <input type="text" name="dateline" value="{'Y-m-d H-i-s'|date:$time}">
-    优先级 <select name="flag" value='normal'>
-      <option>normal</option>
-      <option>hot</option>
-      <option>latest</option>
-      <option>important</option>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon2" >标签</span>
+          <input type="text" class="form-control" name="tags" value="{$data.tags|default:''}" placeholder="" aria-describedby="basic-addon2">
+        </div>
 
-    </select>   
-    <input type="hidden" name="id" value="{$data.id|default:''}">
-    
-    <input type="submit" value="提交">
-    
-</form>
+        <div class="input-group">
+          <span class="input-group-addon">时间</span>
+          <input type="text" name="dateline" value="{'Y-m-d H-i-s'|date:$time}" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">题图</span>
+          <input type="text" name="pic_path" class="form-control" value="{$data.pic_path|default:'img/blog/editors_post_img.jpg'}" aria-label="Amount (to the nearest dollar)">
+        </div>
+        <label for="index"> 优先级 &nbsp;</label>
+          <select name="flag" id="index" value='{$data.flag|default:'normal'}' >
+            <option>hot</option>
+            <option>latest</option>
+            <option>normal</option>
+            <option>important</option>
+          </select>
+        <input type="submit" value="提交" class="input-group pull-right">
+        <br>
+        <textarea name="content" id="summernote" class="form-control" rows="6" >{$data.content|default:''}</textarea>
+        <!-- Single button -->
+         <input type="hidden" name="id" value="{$data.id|default:''}">
+    </form>
+</div>
+
 <script>
     // 初始化插件
 $(function () {
@@ -44,11 +46,12 @@ $(function () {
 $('#summernote').summernote({
      // 语言
      lang:'zh-CN',
-  height: 300,                 // set editor height
+  height: 400,                 // set editor height
   minHeight: null,             // set minimum height of editor
   maxHeight: null,             // set maximum height of editor
   focus: true                  // set focus to editable area after initializing summernote
 });
+
 </script>
-</body>
-</html>
+
+

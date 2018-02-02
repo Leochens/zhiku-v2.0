@@ -118,7 +118,7 @@ class Smarty_Internal_Runtime_TplFunction
                     while (!isset($tplPtr->cached) && isset($tplPtr->parent)) {
                         $tplPtr = $tplPtr->parent;
                     }
-                    // add template function code to cache file
+                    // router_article_articleInsertUpdate template function code to cache file
                     if (isset($tplPtr->cached)) {
                         /* @var Smarty_CacheResource $cache */
                         $cache = $tplPtr->cached;

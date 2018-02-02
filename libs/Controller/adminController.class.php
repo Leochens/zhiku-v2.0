@@ -1,6 +1,6 @@
 <?php 
 
-class adminController{
+class adminController extends CONTROLLER{
 
 
     public $auth='';
@@ -8,6 +8,7 @@ class adminController{
 
     public function __construct()
     {
+        VIEW::assign($GLOBALS['universal']);   
         //判断当前是否已经登录->auth模型
         $authobj = M('auth');
         $this->auth = $authobj->getAuth();
@@ -20,10 +21,16 @@ class adminController{
     }
     public function index()
     {
+        
+
         $news = M('article');
         $count = $news->count();
         //传递的是一个数组 键值对
         VIEW::assign(array('newsNum'=>$count,'hello'=>'你好'));
+        VIEW::assign(array(
+            'adminTplPath'=>'tpl/admin/'   ,       //admin模板路径
+            'time'=>time(),'what'=>'articleAdd.html'
+            ));
         VIEW::display('tpl/admin/index.html');
     }
    
@@ -66,8 +73,10 @@ class adminController{
         if($authobj->loginSubmit()){
            
             $this->showMessage("登录成功!",'admin.php?controller=admin&method=index');
+            exit();
         }else{
             $this->showMessage("登录失败!",'admin.php?controller=admin&method=login');
+            exit();
 
         }
     }

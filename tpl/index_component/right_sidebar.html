@@ -424,7 +424,7 @@
             {foreach from=$hot item=item name=foo }
             <article class="entry">
                 <div class="entry__img-holder mb-0">
-                  <a href="{$router.single}{$item.id}">
+                  <a href="{$router_article_articleDetail}{$item.id}">
                     <div class="thumb-bg-holder">
                       <img data-src="{$item.pic_path}" class="entry__img owl-lazy" alt="">
                       <div class="bottom-gradient"></div>
@@ -434,7 +434,7 @@
 
                 <div class="thumb-text-holder">  
                   <h2 class="thumb-entry-title thumb-entry-title--sm">
-                    <a href="{$router.single}{$item.id}">{$item.title}</a>
+                    <a href="{$router_article_articleDetail}{$item.id}">{$item.title}</a>
                   </h2>
                 </div>
             </article>
@@ -454,14 +454,14 @@
                 <article class="post-list-small__entry clearfix">
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
-                      <a href="{$router.single}{$item.id}">
+                      <a href="{$router_article_articleDetail}{$item.id}">
                         <img data-src="{$item.pic_path}" src="{$item.pic_path}" alt="" class=" lazyload">
                       </a>
                     </div>
                   </div>
                   <div class="post-list-small__body">
                     <h3 class="post-list-small__entry-title">
-                      <a href="{$router.single}{$item.id}">{$item.title}</a>
+                      <a href="{$router_article_articleDetail}{$item.id}">{$item.title}</a>
                     </h3>
                     <ul class="entry__meta">
                       <li class="entry__meta-rating">

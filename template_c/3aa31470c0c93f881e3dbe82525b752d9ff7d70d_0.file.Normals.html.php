@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 12:58:53
+/* Smarty version 3.1.30, created on 2018-02-02 07:37:34
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\Normals.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71af7df38b60_46277651',
+  'unifunc' => 'content_5a74072eb9bbc8_43621171',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3aa31470c0c93f881e3dbe82525b752d9ff7d70d' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\Normals.html',
-      1 => 1517399805,
+      1 => 1517553451,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a71af7df38b60_46277651 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a74072eb9bbc8_43621171 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once 'E:\\IT_study\\zhiku-v2.0\\libs\\View\\smarty_libs\\plugins\\modifier.truncate.php';
 ?>
 <section class="section editors-picks mb-20">
@@ -32,7 +32,7 @@ if (!is_callable('smarty_modifier_truncate')) require_once 'E:\\IT_study\\zhiku-
               <div class="col-lg-7">
                 <article class="entry">
                   <div class="entry__img-holder">
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['arti_data']->value[0]['id'];?>
 ">
                       <div class="thumb-container thumb-75">
@@ -47,7 +47,7 @@ echo $_smarty_tpl->tpl_vars['arti_data']->value[0]['id'];?>
                     <div class="entry__header">
                       <a href="#" class="entry__meta-category">science</a>
                       <h2 class="entry__title">
-                        <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['arti_data']->value[0]['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['arti_data']->value[0]['title'];?>
 </a>
@@ -92,7 +92,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
                         <article class="post-list-small__entry">
                           <div class="post-list-small__body">
                             <h3 class="post-list-small__entry-title">
-                              <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                              <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>

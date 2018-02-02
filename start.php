@@ -1,7 +1,7 @@
 <?php 
 //启动程序
 
-
+date_default_timezone_set('Asia/Shanghai'); //设置时区
 $curdir=dirname(__FILE__);      //获得当前目录
 include './include.list.php';    //获得清单
 foreach ($path as $item) {

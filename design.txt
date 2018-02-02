@@ -10,8 +10,8 @@
 
     articleModel    文章操作的模型
         arti_insert($table,$data)   
-        arti_delete($table,$id)
+        articleDelete($table,$id)
         arti_update($table,$data,$id)
-        arti_show($id)
+        articleShow($id)
 
             

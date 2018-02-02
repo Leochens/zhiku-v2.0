@@ -59,7 +59,7 @@ class articleModel
                 'dateline'=>time(),
                 'flag'=>$flag
             );
-            echo $data['content'];
+            //echo $data['content'];
             if($_POST['id']!='')    //如果id不是空 那么说明要修改
             {
                 DB::update($this->table,$data,'id = '.$id);

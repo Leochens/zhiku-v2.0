@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 14:31:23
+/* Smarty version 3.1.30, created on 2018-02-02 07:37:34
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\content.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71c52b533197_07572112',
+  'unifunc' => 'content_5a74072e845f24_58524208',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b2d11062fa165e80bc0eb3a5724aa5b2d7d36f2f' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\content.html',
-      1 => 1517405480,
+      1 => 1517553451,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/index_component/right_sidebar.html' => 1,
   ),
 ),false)) {
-function content_5a71c52b533197_07572112 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a74072e845f24_58524208 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <div class="main-container container mt-40" id="main-container">         
 
@@ -88,7 +88,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
               <article class="entry">
                 <div class="entry__img-holder">
-                  <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 ">
                     <div class="thumb-container thumb-75">
@@ -102,7 +102,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                 <div class="entry__body">
                   <div class="entry__header">
                     <h2 class="entry__title entry__title--sm">
-                      <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                      <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>

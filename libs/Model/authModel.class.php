@@ -10,7 +10,8 @@ class authModel
         if(empty($_POST['username'])||empty($_POST['password']))
             return false;
         $username = addslashes($_POST['username']); 
-        $password = addslashes($_POST['password']);
+        //$password = addslashes($_POST['password']);
+        $password = md5(addslashes($_POST['password']));
         
         //用户验证操作 到checkuser方法
         if($this->auth=$this-> checkuser($username,$password))

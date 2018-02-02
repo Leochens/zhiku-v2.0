@@ -100,7 +100,7 @@ function smarty_function_html_options($params)
             case 'readonly':
                 if (!empty($params[ 'strict' ])) {
                     if (!is_scalar($_val)) {
-                        trigger_error("html_options: $_key attribute must be a scalar, only boolean true or string '$_key' will actually add the attribute",
+                        trigger_error("html_options: $_key attribute must be a scalar, only boolean true or string '$_key' will actually router_article_articleInsertUpdate the attribute",
                                       E_USER_NOTICE);
                     }
 

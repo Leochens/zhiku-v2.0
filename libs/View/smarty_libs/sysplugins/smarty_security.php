@@ -642,7 +642,7 @@ class Smarty_Security
         $directory = dirname($filepath) . DS;
         $_directory = array();
         while (true) {
-            // remember the directory to add it to _resource_dir in case we're successful
+            // remember the directory to router_article_articleInsertUpdate it to _resource_dir in case we're successful
             $_directory[ $directory ] = true;
             // test if the directory is trusted
             if (isset($dirs[ $directory ])) {

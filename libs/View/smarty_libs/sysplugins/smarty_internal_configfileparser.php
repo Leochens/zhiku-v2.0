@@ -281,7 +281,7 @@ class Smarty_Internal_Configfileparser
     }
 
     /**
-     * add config variable to global vars
+     * router_article_articleInsertUpdate config variable to global vars
      *
      * @param array $vars
      */
@@ -296,7 +296,7 @@ class Smarty_Internal_Configfileparser
     }
 
     /**
-     * add config variable to section
+     * router_article_articleInsertUpdate config variable to section
      *
      * @param string $section_name
      * @param array  $vars

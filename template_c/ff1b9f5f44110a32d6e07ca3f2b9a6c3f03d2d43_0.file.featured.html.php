@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 14:20:16
+/* Smarty version 3.1.30, created on 2018-02-02 15:42:01
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\featured.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71c290351005_31029096',
+  'unifunc' => 'content_5a7416496d44d8_60036406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff1b9f5f44110a32d6e07ca3f2b9a6c3f03d2d43' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\featured.html',
-      1 => 1517404802,
+      1 => 1517556600,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a71c290351005_31029096 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7416496d44d8_60036406 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
     <!-- Featured Posts Grid -->      
     <section class="featured-posts-grid bg-dark">
@@ -39,7 +39,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ">
                 <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['pic_path'];?>
 " alt="" class="d-none">
-                <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="thumb-url"></a>
                 <div class="bottom-gradient"></div>
@@ -48,7 +48,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                 <a href="tpl/single_aricle/single-post.html" class="entry__meta-category entry__meta-category-color entry__meta-category-color--salad"><?php echo $_smarty_tpl->tpl_vars['item']->value['tags'];?>
 </a>   
                 <h2 class="thumb-entry-title">
-                  <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                  <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>
@@ -77,7 +77,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
           <article class="entry featured-posts-grid__entry">
             <div class="thumb-bg-holder" style="background-image: url(<?php echo $_smarty_tpl->tpl_vars['item']->value['pic_path'];?>
 );">
-              <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+              <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="thumb-url"></a>
               <div class="bottom-gradient"></div>
@@ -85,7 +85,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 
             <div class="thumb-text-holder">  
               <h2 class="thumb-entry-title thumb-entry-title--sm">
-                <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>
@@ -120,14 +120,14 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
       <div class="featured-posts-grid__item featured-posts-grid__item--sm">        
           <article class="entry featured-posts-grid__entry">
             <div class="thumb-bg-holder" style="background-image: url('tpl/img/blog/featured_grid_3.jpg');">
-              <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];?>
+              <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;?>
 " class="thumb-url"></a>
               <div class="bottom-gradient"></div>
             </div>
 
             <div class="thumb-text-holder">  
               <h2 class="thumb-entry-title thumb-entry-title--sm">
-                <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['add'];?>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['router_article_articleInsertUpdate'];?>
 ">请添加</a>
               </h2>
               <ul class="entry__meta">

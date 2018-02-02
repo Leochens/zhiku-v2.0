@@ -4,11 +4,11 @@
 /**
 *   
 */
-class indexController 
+class indexController extends CONTROLLER
 {
 
-
-    function index()
+ 
+    public function index()
     { 
         //核心 ： 获得数据之后填充数据
         $indexobj = M('index');
@@ -20,12 +20,9 @@ class indexController
        // echo "<pre>";
        // print_r($res);
        // 建立路由
-       $router = array(
-        'single'=>'index.php?controller=article&method=articleDetail&id=',
-        'index'=>'index.php',
-        'add'=>'index.php?controller=article&method=arti_insert_update'
-    );
+       
        //print_r($Hot);
+       
         VIEW::assign(array(
           'router'=>$router,
           'arti_data'=>$All,
@@ -34,6 +31,7 @@ class indexController
           'important'=>$Important,
           'normal'=>$Normal
         ));
+
         VIEW::display('tpl/index.html');
     }
 

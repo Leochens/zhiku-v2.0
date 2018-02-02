@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 07:19:08
+/* Smarty version 3.1.30, created on 2018-02-02 15:35:58
   from "E:\IT_study\zhiku-v2.0\tpl\admin\articleAdd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a715fdc50a145_39468228',
+  'unifunc' => 'content_5a7414deb88811_04547637',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8c90e29e930c23d589567e1e6261a193aedf8566' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\admin\\articleAdd.html',
-      1 => 1517379478,
+      1 => 1517556918,
       2 => 'file',
     ),
   ),
@@ -20,59 +20,56 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a715fdc50a145_39468228 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7414deb88811_04547637 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>添加新闻</title>
-    <!-- include libraries(jQuery, bootstrap) -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <?php echo '<script'; ?>
- src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"><?php echo '</script'; ?>
-> 
-    <?php echo '<script'; ?>
- src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"><?php echo '</script'; ?>
-> 
 
-    <!-- include summernote css/js-->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
-    <?php echo '<script'; ?>
- src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"><?php echo '</script'; ?>
->
-
-</head>
-<body>
-<form id="form" action="admin.php?controller=article&method=arti_insert_update" method="post">
-    
-    标题<input type="" name="title" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
-"><br>
-    发布人<input type="" name="author" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['author'])===null||$tmp==='' ? '' : $tmp);?>
-"><br>
-    标签<input type="" name="tags" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['tags'])===null||$tmp==='' ? '' : $tmp);?>
-"><br>
-    图片路径<input type="" name="pic_path" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['pic_path'])===null||$tmp==='' ? 'tpl/img/blog/editors_post_img.jpg' : $tmp);?>
-"><br>
-    
-    内容 <textarea id="summernote" name="content" ><?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['content'])===null||$tmp==='' ? '' : $tmp);?>
-</textarea><br>
-    
-    <!--获得id-->
-    时间 <input type="text" name="dateline" value="<?php echo date('Y-m-d H-i-s',$_smarty_tpl->tpl_vars['time']->value);?>
+<br><br><br>
+<div class="container">
+    <form   class="col-sm-6 col-md-12"  action="admin.php?controller=article&method=articleInsertUpdate" method="post">
+        <input class="form-control input-lg"  type="text" placeholder="文章标题" name="title" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
 ">
-    优先级 <select name="flag" value='normal'>
-      <option>normal</option>
-      <option>hot</option>
-      <option>latest</option>
-      <option>important</option>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1" >作者</span>
+          <input type="text" name="author" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['author'])===null||$tmp==='' ? '' : $tmp);?>
+" class="form-control" placeholder="" aria-describedby="basic-addon1">
+        </div>
 
-    </select>   
-    <input type="hidden" name="id" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['id'])===null||$tmp==='' ? '' : $tmp);?>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon2" >标签</span>
+          <input type="text" class="form-control" name="tags" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['tags'])===null||$tmp==='' ? '' : $tmp);?>
+" placeholder="" aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">时间</span>
+          <input type="text" name="dateline" value="<?php echo date('Y-m-d H-i-s',$_smarty_tpl->tpl_vars['time']->value);?>
+" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">题图</span>
+          <input type="text" name="pic_path" class="form-control" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['pic_path'])===null||$tmp==='' ? 'img/blog/editors_post_img.jpg' : $tmp);?>
+" aria-label="Amount (to the nearest dollar)">
+        </div>
+        <label for="index"> 优先级 &nbsp;</label>
+          <select name="flag" id="index" value='<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['flag'])===null||$tmp==='' ? 'normal' : $tmp);?>
+' >
+            <option>hot</option>
+            <option>latest</option>
+            <option>normal</option>
+            <option>important</option>
+          </select>
+        <input type="submit" value="提交" class="input-group pull-right">
+        <br>
+        <textarea name="content" id="summernote" class="form-control" rows="6" ><?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['content'])===null||$tmp==='' ? '' : $tmp);?>
+</textarea>
+        <!-- Single button -->
+         <input type="hidden" name="id" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['id'])===null||$tmp==='' ? '' : $tmp);?>
 ">
-    
-    <input type="submit" value="提交">
-    
-</form>
+    </form>
+</div>
+
 <?php echo '<script'; ?>
 >
     // 初始化插件
@@ -82,13 +79,15 @@ $(function () {
 $('#summernote').summernote({
      // 语言
      lang:'zh-CN',
-  height: 300,                 // set editor height
+  height: 400,                 // set editor height
   minHeight: null,             // set minimum height of editor
   maxHeight: null,             // set maximum height of editor
   focus: true                  // set focus to editable area after initializing summernote
 });
+
 <?php echo '</script'; ?>
 >
-</body>
-</html><?php }
+
+
+<?php }
 }

@@ -53,7 +53,7 @@ if (!function_exists('smarty_mb_wordwrap')) {
                     }
 
                     if (!$_space) {
-                        // add the break before the token
+                        // router_article_articleInsertUpdate the break before the token
                         if (!empty($t)) {
                             $t .= $break;
                         }
@@ -65,7 +65,7 @@ if (!function_exists('smarty_mb_wordwrap')) {
                     $length = 0;
                 }
                 $_previous = $_space;
-                // add the token
+                // router_article_articleInsertUpdate the token
                 $t .= $token;
             }
         }

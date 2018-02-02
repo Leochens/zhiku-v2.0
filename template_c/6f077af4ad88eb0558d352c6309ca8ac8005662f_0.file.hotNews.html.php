@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 13:02:48
+/* Smarty version 3.1.30, created on 2018-02-02 07:37:34
   from "E:\IT_study\zhiku-v2.0\tpl\index_component\hotNews.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71b0687a81f0_20887091',
+  'unifunc' => 'content_5a74072e95ed89_01039194',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6f077af4ad88eb0558d352c6309ca8ac8005662f' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\index_component\\hotNews.html',
-      1 => 1517400139,
+      1 => 1517553451,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a71b0687a81f0_20887091 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a74072e95ed89_01039194 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once 'E:\\IT_study\\zhiku-v2.0\\libs\\View\\smarty_libs\\plugins\\modifier.truncate.php';
 ?>
           <section class="section tab-post mb-10">
@@ -65,7 +65,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
                   <div class="col-md-6">
                     <article class="entry">
                       <div class="entry__img-holder">
-                        <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 ">
                           <div class="thumb-container thumb-75">
@@ -81,7 +81,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                           <a href="#" class="entry__meta-category"><?php echo $_smarty_tpl->tpl_vars['item']->value['tags'];?>
 </a>
                           <h2 class="entry__title">
-                            <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>
@@ -104,7 +104,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                           </ul>
                         </div>
                         <div class="entry__excerpt">
-                          <p><?php echo smarty_modifier_truncate(preg_replace('!<[^>]*?>!', ' ', $_smarty_tpl->tpl_vars['item']->value['content']),200," <a href='".((string)$_smarty_tpl->tpl_vars['router']->value['single']).((string)$_smarty_tpl->tpl_vars['item']->value['id'])."'>...查看文章</a>");?>
+                          <p><?php echo smarty_modifier_truncate(preg_replace('!<[^>]*?>!', ' ', $_smarty_tpl->tpl_vars['item']->value['content']),200," <a href='".((string)$_smarty_tpl->tpl_vars['router_article_articleDetail']->value).((string)$_smarty_tpl->tpl_vars['item']->value['id'])."'>...查看文章</a>");?>
 </p>
                         </div>
                       </div>
@@ -136,7 +136,7 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_foo']->value['iteration']++;
                   <div class="col-md-6">
                     <article class="entry">
                       <div class="entry__img-holder">
-                        <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 ">
                           <div class="thumb-container thumb-75">
@@ -152,7 +152,7 @@ echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
                           <a href="#" class="entry__meta-category"><?php echo $_smarty_tpl->tpl_vars['item']->value['tags'];?>
 </a>
                           <h2 class="entry__title">
-                            <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['single'];
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['router_article_articleDetail']->value;
 echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </a>

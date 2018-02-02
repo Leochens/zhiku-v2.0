@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-01-31 14:59:39
+/* Smarty version 3.1.30, created on 2018-02-02 08:00:16
   from "E:\IT_study\zhiku-v2.0\tpl\single_article\single-post.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a71cbcbe125d2_53118439',
+  'unifunc' => 'content_5a740c80313939_46773669',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0228d9c8851641629cffc3dc152516e5e6cd7abd' => 
     array (
       0 => 'E:\\IT_study\\zhiku-v2.0\\tpl\\single_article\\single-post.html',
-      1 => 1517407177,
+      1 => 1517554698,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:tpl/js_srcs.html' => 1,
   ),
 ),false)) {
-function content_5a71cbcbe125d2_53118439 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a740c80313939_46773669 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,11 +70,11 @@ function content_5a71cbcbe125d2_53118439 (Smarty_Internal_Template $_smarty_tpl)
           <!-- Breadcrumbs -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-              <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
+              <a href="<?php echo $_smarty_tpl->tpl_vars['router_index_index']->value;?>
 " class="breadcrumbs__url"><i class="ui-home"></i></a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="<?php echo $_smarty_tpl->tpl_vars['router']->value['index'];?>
+              <a href="<?php echo $_smarty_tpl->tpl_vars['router_index_index']->value;?>
 " class="breadcrumbs__url">首页</a>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--current">

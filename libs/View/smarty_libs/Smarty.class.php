@@ -1446,7 +1446,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     {
         $_is_muted_directory = false;
 
-        // add the SMARTY_DIR to the list of muted directories
+        // router_article_articleInsertUpdate the SMARTY_DIR to the list of muted directories
         if (!isset(Smarty::$_muted_directories[ SMARTY_DIR ])) {
             $smarty_dir = realpath(SMARTY_DIR);
             if ($smarty_dir !== false) {

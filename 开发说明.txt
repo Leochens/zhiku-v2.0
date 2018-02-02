@@ -1,0 +1,16 @@
+1.创建新的控制器的时候一定要继承CONTROLLER父类 因为要注册模板全局变量
+
+
+
+
+命名规范
+1.一般变量 函数命名要遵循驼峰命名法
+
+2.包含关系的语义变量或函数名 遵循 parent_child 命名法 eg：admin_title
+
+3.路由命名 遵循router_控制器_方法 eg：router_article_articleInsertUpdate
+
+4.最高优先级变量 全大写 如TITLE  DB VIEW
+
+资源规范
+1.js css 第三方不使用cdn 使用本地资源
