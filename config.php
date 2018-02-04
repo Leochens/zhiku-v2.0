@@ -47,9 +47,9 @@ $universal=array(
     'router_admin_login'                =>'admin.php?controller=admin&method=login',
     'router_admin_logout'                =>'admin.php?controller=admin&method=logOut',
     'router_article_articleDetail'      =>'index.php?controller=article&method=articleDetail&id=',
-    'router_article_articleInsertUpdate'=>'admin.php?controller=article&method=articleInsertUpdate&id=',
-    'router_article_articleDelete'      =>'admin.php?controller=article&method=articleDelete&id=',
-    'router_article_articleShow'        =>'admin.php?controller=article&method=articleShow',
+    'router_article_codeInsertUpdate'=>'index.php?controller=code&method=codeInsertUpdate&id=',
+    'router_article_codeDelete'      =>'index.php?controller=code&method=codeDelete&id=',
+    'router_article_codeShow'        =>'index.php?controller=code&method=codeShow',
     );
 
 
